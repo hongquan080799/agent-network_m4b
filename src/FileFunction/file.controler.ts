@@ -29,7 +29,7 @@ export class FileController {
     });
   }
 
-  @Post('/htmlToPdf')
+  @Post('/htmlToImage')
   @UseInterceptors(FileInterceptor('file'))
   async convertHtmlToImage(
     @UploadedFile() file: Express.Multer.File,
